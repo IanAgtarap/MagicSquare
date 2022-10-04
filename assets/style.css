@@ -408,6 +408,9 @@ font-size: 12px;
 .btn-back,.btn-pause, .btn-check{ 
 font-size: 30px;
 }
+.title-container span{
+    font-size: 25px;
+}
 
 
 
