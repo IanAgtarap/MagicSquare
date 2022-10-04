@@ -613,12 +613,12 @@ function congratulationModal(){
     winner.loop = false
 
     //create container
-    const modalContainerClasses = [myClasses.modalContainer, myClasses.flex, myClasses.justifyCenter, myClasses.flRow, myClasses.alignCenter, myClasses.congratulationBackgroundq]
+    const modalContainerClasses = [myClasses.modalContainer, myClasses.flex, myClasses.justifyCenter, myClasses.flRow, myClasses.alignCenter, myClasses.congratulationBackground]
     const modalPauseContainer = createElement(myElements.div,modalContainerClasses)
     main.appendChild(modalPauseContainer)
 
     //create contents
-    const modalContentClasses = [myClasses.modalSize, myClasses.flex, myClasses.alignCenter, myClasses.justifyCenter, myClasses.fdCol, myClasses.congratulationBackground, myClasses.animationZoom, 'bgModal']
+    const modalContentClasses = [myClasses.modalSize, myClasses.flex, myClasses.alignCenter, myClasses.justifyCenter, myClasses.fdCol, myClasses.animationZoom, 'bgModal']
     const modalContent = createElement(myElements.div, modalContentClasses)
     modalPauseContainer.appendChild(modalContent)
 
