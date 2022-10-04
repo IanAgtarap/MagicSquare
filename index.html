@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | MAGIC SQUARE</title>
+
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Script -->
+    <script src="assets/script.js" defer></script>
+
+    <!-- ICON REFERENCE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <audio class="backgroundMusic" loop autoplay>
+        <source src="/assets/bMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- GAME TITLE ALWAYS SHOW -->
+    <div class="title-container flex justify-center align-center h20 w100">
+        <span style="--i:1">M</span>
+        <span style="--i:2">A</span>
+        <span style="--i:3">G</span>
+        <span style="--i:4">I</span>
+        <span class="letterC" style="--i:5">C</span>
+        <span style="--i:6">S</span>
+        <span style="--i:7">Q</span>
+        <span style="--i:8">U</span>
+        <span style="--i:9">A</span>
+        <span style="--i:10">R</span>
+        <span style="--i:11">E</span>
+    </div>
+
+    <main class="main w100 h80">
+        <!--GAME HOME PAGE  -->
+        <div class="page-main  flex show-page justify-center align-center fd-row h100">
+            <div class="page-main-container flex fd-col rgap20">
+                <button class="btn-play w3-hover-blue">
+                    <h1>PLAY</h1>
+                </button>
+                <button class="btn-howToPlay w3-hover-blue">
+                    <h1>HOW TO PLAY</h1>
+                </button>
+                <button class="btn-settings w3-hover-blue">
+                    <h1>SETTINGS</h1>
+                </button>
+            </div>
+        </div>
+
+        <!-- GAME LEVEL SELECTION PAGE -->
+        <div class="page-selectLevel hide-page flex fd-col h100 mx40" id="page-selectLevel">
+            <p class="h10 text-center">SELECT LEVEL</p>
+            <div class="back-btn-container h20">
+                <button class="btn-backToHome btn-back">
+                    <i class="fa fa-window-close"></i>
+                </button>
+            </div>
+            <div class="page-selectLevel-container flex justify-evenly  fd-row h80">
+                <div class="level flex justify-center align-center w3-hover-blue" id="level-beginner">
+                    <p class="level-title" >BEGINNER</p>
+                </div>
+                <div class="level flex justify-center align-center magic-digit text-white" id="level-intermidiate">
+                    <p class="level-title">INTERMIDIATE</p>
+                </div>
+                <div class="level flex justify-center align-center magic-digit text-white" id="level-advanced">
+                    <p class="level-title">ADVANCED</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SETTINGS PAGE -->
+        <div class="page-settings hide-page flex fd-col h100 mx40" id="page-settings">
+            <p class="h10 text-center">GAME SETTINGS</p>
+            <div class="back-btn-container ">
+                <button class="btn-backToHomes btn-back">
+                    <i class="fa fa-window-close"></i>
+                </button>
+            </div>
+            <div class="page-settings-container flex align-center justify-evenly fd-col h90">
+                <div class="settings-child">
+                    <h1>MUSIC: 
+                        <span class="span-settings">
+                            <input type="radio" id="musicOn" name="music" value="ON">
+                            <label for="musicOn">ON</label>
+                            <input type="radio" id="MusicOff" name="music" value="OFF">
+                            <label for="MusicOff">OFF</label>
+                        </span>
+                    </h1>
+                </div>
+                <button type="submit" class="btn-saveSetting w3-hover-blue">
+                   <h1>SAVE CHANGES</h1>
+                </button>
+                <div class="settings-child">
+                    <button class="btn-credits w3-hover-blue">
+                        <h1>CREDITS</h1>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREDIT PAGE -->
+        <div class="page-credit hide-page flex fd-col h100 mx40" id="page-settings">
+            <p class="h10 text-center">GAME CREDITS</p>
+            <div class="back-btn-container">
+                <button class="btn-backToSetting btn-back">
+                    <i class="fa fa-window-close"></i>
+                </button>
+            </div>
+            <div class="page-credit-container flex align-center  fd-col h90">
+               <h1> <span><h1> IAN KREZELVENT AGTARAP</h1></span>GAME CREATOR</h1>
+               <h3>MUSIC: <span><a target="_blank" href="https://www.chosic.com/free-music/all/">CHOSIC</a></span></h3>
+               <h3>ICON: <span><a target="_blank" href="https://fontawesome.com/v4/icons/">FRONTAWESOME 4</a></span></h3>
+               <h3>BACKGROUND: <span><a target="_blank" href="https://giphy.com/">GIPHY</a></span></h3>
+               <h3>ANIMATION: <span><a target="_blank" href="https://www.w3schools.com/w3css/w3css_animate.asp">W3SCHOOL</a></span></h3>
+               <h3>TEXT ANIMATION: <span><a target="_blank" href="https://codepen.io/alvarotrigo/pen/xxLvyOG">Bouncing With Reflection Text Animation</a></span></h3>
+            </div>
+        </div>
+
+        <!-- INSTRUCTION PAGE -->
+        <div class="page-howToPlay hide-page flex align-center fd-col h100 mx40" id="page-howToPlay">
+            <p class="h10 text-center">HOW TO PLAY?</p>
+            <div class="back-btn-container ">
+                <button class="btn-backToMain btn-back">
+                    <i class="fa fa-window-close"></i>
+                </button>
+            </div>
+            <div class="page-howToPlay-container flex align-center justify-evenly fd-col h90 w80">
+                <img src="/assets/Magicsquareexample.svg" alt="" srcset="">
+                <div class="bg-white">
+                    
+                    <h4>A square array of numbers, usually positive integers, is called a <strong>Magic Square</strong>  if the sums of the numbers in each row, each column, and both main diagonals are the same.</h4>
+                   
+                </div>
+                <h3>SOURCE: <span><a target="_blank" href="https://en.wikipedia.org/wiki/Magic_square">MAGIC SQUARE</a></span></h3>
+            
+        </div>
+        <!-- DYNAMIC PART -->
+        
+    </main>
+    
+</body>
+</html>
