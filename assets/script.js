@@ -25,9 +25,9 @@ const levelAdvanced = document.querySelector('#level-advanced')
 
 // Background music
 const backgroundMusic = document.querySelector('.backgroundMusic')
-const buttonHoverMusic = new Audio('/MagicSquare.github.io/assets/buttonHover.mp3')
-const winner = new Audio('/MagicSquare.github.io/assets/win.mp3')
-const tryAgain = new Audio('/MagicSquare.github.io/assets/tryAgain.mp3')
+const buttonHoverMusic = new Audio('/MagicSquare/assets/buttonHover.mp3')
+const winner = new Audio('/MagicSquare/assets/win.mp3')
+const tryAgain = new Audio('/MagicSquare/assets/tryAgain.mp3')
 
 //Problem status 1 is solved or to be solve 0 is not solve
 let problemStatus = {

@@ -1,6 +1,6 @@
 @font-face {
     font-family: changas;
-    src: url('/MagicSquare.github.io/assets/Changa/Changa-VariableFont_wght.ttf');
+    src: url('/MagicSquare/assets/Changa/Changa-VariableFont_wght.ttf');
   }
 
 *{
@@ -14,7 +14,7 @@ body{
     font-family: changas;
     overflow: hidden;    
     
-    background-image:url('/MagicSquare.github.io/assets/giphy.gif');
+    background-image:url('/MagicSquare/assets/giphy.gif');
     background-repeat:repeat;
     background-color: hsla(0, 0%, 0%, 0.1);
 }
@@ -313,7 +313,7 @@ input[type=number]:hover{
 }
 
 .congratulation-background{
-    background-image:url('/MagicSquare.github.io/assets/congratulation.gif');
+    background-image:url('/MagicSquare/assets/congratulation.gif');
     background-repeat: round;
 }
 
@@ -346,7 +346,7 @@ input[type=radio]{
 }
 
 .bgModal{
-    background-image: url('/MagicSquare.github.io/assets/bgModal.gif');
+    background-image: url('/MagicSquare/assets/bgModal.gif');
     background-repeat: no-repeat;
     background-size: 100% 110%;
     background-position: center;
