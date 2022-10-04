@@ -354,9 +354,6 @@ input[type=radio]{
 
 /* PHONE SCREEN */
 @media (max-width: 480px) {
-    .title{
-        font-size: 45px;
-    }
   .page-selectLevel-container{
     flex-direction: column;
     align-items: center;
@@ -408,7 +405,7 @@ font-size: 12px;
 .btn-back,.btn-pause, .btn-check{ 
 font-size: 30px;
 }
-.title-container{
+.title-container span{
     font-size: 25px;
 }
 
