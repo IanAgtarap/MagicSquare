@@ -1,6 +1,6 @@
 @font-face {
   font-family: changas;
-  src: url('/assets/Changa/Changa-VariableFont_wght.ttf');
+  src: url('/MagicSquare/assets/Changa/Changa-VariableFont_wght.ttf');
 }
 
 * {
@@ -16,7 +16,7 @@ body {
   font-family: changas;
   overflow: hidden;
 
-  background-image: url("/assets/background/giphy.gif");
+  background-image: url("/MagicSquare/assets/background/giphy.gif");
   background-repeat: repeat;
   background-color: hsla(0, 0%, 0%, 0.1);
 }
@@ -324,7 +324,7 @@ input[type="number"]:hover {
 }
 
 .congratulation-background {
-  background-image: url("/assets/background/congratulation.gif");
+  background-image: url("/MagicSquare/assets/background/congratulation.gif");
   background-repeat: round;
 }
 
@@ -357,7 +357,7 @@ input[type="radio"] {
 }
 
 .bgModal {
-  background-image: url("/assets/background/bgModal.gif");
+  background-image: url("/MagicSquare/assets/background/bgModal.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
