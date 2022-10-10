@@ -25,10 +25,10 @@ const levelAdvanced = document.querySelector('#level-advanced')
 
 // Background music
 // const backgroundMusic = document.querySelector('.backgroundMusic')
-const backgroundMusic = new Audio('MagicSquare/assets/soundEffect/bMusic.mp3')
-const buttonHoverMusic = new Audio('MagicSquare/assets/soundEffect/buttonHover.mp3')
-const winner = new Audio('MagicSquare/assets/soundEffect/win.mp3')
-const tryAgain = new Audio('MagicSquare/assets/soundEffect/tryAgain.mp3')
+const backgroundMusic = new Audio('/MagicSquare/assets/soundEffect/bMusic.mp3')
+const buttonHoverMusic = new Audio('/MagicSquare/assets/soundEffect/buttonHover.mp3')
+const winner = new Audio('/MagicSquare/assets/soundEffect/win.mp3')
+const tryAgain = new Audio('/MagicSquare/assets/soundEffect/tryAgain.mp3')
 const music = document.getElementsByName('music')
 let musicStatus = true
 
