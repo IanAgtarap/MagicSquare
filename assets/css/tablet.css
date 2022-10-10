@@ -1,0 +1,16 @@
+/* TABLET SCREEN */
+@media (min-width: 481px) and (max-width: 768px) {
+    .page-selectLevel-container {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .level {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .back-btn-container {
+      height: 5%;
+    }
+  }

@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS | MAGIC SQUARE</title>
 
-    <link rel="shortcut icon" href="/MagicSquare/assets/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/background/icon.png" type="image/x-icon">
 
     <!-- Styling -->
-    <link rel="stylesheet" href="/MagicSquare/assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Script -->
-    <script src="/MagicSquare/assets/script.js" defer></script>
+    <script src="./assets/scripts/modules/classes.js" defer></script>
+    <script src="./assets/scripts/modules/elements.js" defer></script>
+    <script src="./assets/scripts/modules/gameLevel.js" defer></script>
+    <script src="./assets/scripts/modules/magicSquare.js" defer></script>
+    <script src="./assets/scripts/script.js" defer></script>
 
     <!-- ICON REFERENCE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <audio class="backgroundMusic" preload="auto" loop autoplay>
-        <source src="/MagicSquare/assets/bMusic.mp3" type="audio/mpeg">
-    </audio>
+    <!-- LINK ONLINE: https://ianagtarap.github.io/MagicSquare/ -->
 
     <!-- GAME TITLE ALWAYS SHOW -->
     <div class="title-container flex justify-center align-center h20 w100">
@@ -43,13 +47,13 @@
         <div class="page-main  flex show-page justify-center align-center fd-row h100">
             <div class="page-main-container flex fd-col rgap20">
                 <button class="btn-play w3-hover-blue">
-                    <h1>PLAY</h1>
+                    <p>PLAY</p>
                 </button>
                 <button class="btn-howToPlay w3-hover-blue">
-                    <h1>HOW TO PLAY</h1>
+                    <p>HOW TO PLAY</p>
                 </button>
                 <button class="btn-settings w3-hover-blue">
-                    <h1>SETTINGS</h1>
+                    <p>SETTINGS</p>
                 </button>
             </div>
         </div>
@@ -85,21 +89,21 @@
             </div>
             <div class="page-settings-container flex align-center justify-evenly fd-col h90">
                 <div class="settings-child">
-                    <h1>MUSIC: 
+                    <p>MUSIC: 
                         <span class="span-settings">
                             <input type="radio" id="musicOn" name="music" value="ON">
                             <label for="musicOn">ON</label>
                             <input type="radio" id="MusicOff" name="music" value="OFF">
                             <label for="MusicOff">OFF</label>
                         </span>
-                    </h1>
+                    </p>
                 </div>
                 <button type="submit" class="btn-saveSetting w3-hover-blue">
-                   <h1>SAVE CHANGES</h1>
+                   <p>SAVE CHANGES</p>
                 </button>
                 <div class="settings-child">
                     <button class="btn-credits w3-hover-blue">
-                        <h1>CREDITS</h1>
+                        <p>CREDITS</p>
                     </button>
                 </div>
             </div>
@@ -113,13 +117,20 @@
                     <i class="fa fa-window-close"></i>
                 </button>
             </div>
-            <div class="page-credit-container flex align-center  fd-col h90">
-               <h1> <span><h1> IAN KREZELVENT AGTARAP</h1></span>GAME CREATOR</h1>
-               <h3>MUSIC: <span><a target="_blank" href="https://www.chosic.com/free-music/all/">CHOSIC</a></span></h3>
-               <h3>ICON: <span><a target="_blank" href="https://fontawesome.com/v4/icons/">FRONTAWESOME 4</a></span></h3>
-               <h3>BACKGROUND: <span><a target="_blank" href="https://giphy.com/">GIPHY</a></span></h3>
-               <h3>ANIMATION: <span><a target="_blank" href="https://www.w3schools.com/w3css/w3css_animate.asp">W3SCHOOL</a></span></h3>
-               <h3>TEXT ANIMATION: <span><a target="_blank" href="https://codepen.io/alvarotrigo/pen/xxLvyOG">Bouncing With Reflection Text Animation</a></span></h3>
+            <div class="page-credit-container flex   fd-col h90 mx50p">
+               <h1>IAN KREZELVENT AGTARAP
+                <span>
+                    <p>GAME CREATOR
+                    </p>
+                    <a href="https://github.com/IanAgtarap" target="_blank">  <i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ian-agtarap-74aa90229/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="mailto:agtarapian0@gmail.com"><i class="fa fa-send"></i></a>
+                </span></h1>
+               <p>MUSIC: <span><a target="_blank" href="https://www.chosic.com/free-music/all/">CHOSIC</a></span></h3>
+               <p>ICON: <span><a target="_blank" href="https://fontawesome.com/v4/icons/">FRONTAWESOME 4</a></span></h3>
+               <p>BACKGROUND: <span><a target="_blank" href="https://giphy.com/">GIPHY</a></span></h3>
+               <p>ANIMATION: <span><a target="_blank" href="https://www.w3schools.com/w3css/w3css_animate.asp">W3SCHOOL</a></span></h3>
+               <p>TEXT ANIMATION: <span><a target="_blank" href="https://codepen.io/alvarotrigo/pen/xxLvyOG">Bouncing With Reflection Text Animation</a></span></h3>
             </div>
         </div>
 
@@ -132,7 +143,7 @@
                 </button>
             </div>
             <div class="page-howToPlay-container flex align-center justify-evenly fd-col h90 w80">
-                <img src="/MagicSquare/assets/Magicsquareexample.svg" alt="" srcset="">
+                <img src="./assets/images/Magicsquareexample.svg" alt="" srcset="">
                 <div class="bg-white">
                     
                     <h4>A square array of numbers, usually positive integers, is called a <strong>Magic Square</strong>  if the sums of the numbers in each row, each column, and both main diagonals are the same.</h4>
@@ -140,6 +151,7 @@
                 </div>
                 <h3>SOURCE: <span><a target="_blank" href="https://en.wikipedia.org/wiki/Magic_square">MAGIC SQUARE</a></span></h3>
             
+            </div>
         </div>
         <!-- DYNAMIC PART -->
         
